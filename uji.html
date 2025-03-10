@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        .form-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group {
+            width: 48%;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Form Pendaftaran</h2>
+        <div class="form-section">
+            <!-- Data Pribadi -->
+            <div class="form-group">
+                <h3>Data Pribadi</h3>
+                <label>Nama Lengkap: <input type="text" name="nama_lengkap"></label>
+                <label>Email: <input type="email" name="email"></label>
+                <label>Nomor Telepon: <input type="text" name="nomor_telepon"></label>
+                <label>Alamat: <textarea name="alamat"></textarea></label>
+                <label>Tanggal Lahir: <input type="date" name="tanggal_lahir"></label>
+                <label>Jenis Kelamin: 
+                    <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki
+                    <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+                </label>
+                <label>Agama:
+                    <select name="agama">
+                        <option>Pilih Agama</option>
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                        <option>Hindu</option>
+                        <option>Buddha</option>
+                        <option>Konghucu</option>
+                    </select>
+                </label>
+                <label>Pendidikan Terakhir:
+                    <input type="radio" name="pendidikan" value="SMA"> SMA
+                    <input type="radio" name="pendidikan" value="D3"> D3
+                    <input type="radio" name="pendidikan" value="S1"> S1
+                </label>
+                <label>Foto: <input type="file" name="foto"></label>
+                <label>CV: <input type="file" name="cv"></label>
+            </div>
+            <!-- Data Orang Tua -->
+            <div class="form-group">
+                <h3>Data Orang Tua</h3>
+                <label>Nama Ayah: <input type="text" name="nama_ayah"></label>
+                <label>Pekerjaan Ayah: <input type="text" name="pekerjaan_ayah"></label>
+                <label>Alamat Ayah: <textarea name="alamat_ayah"></textarea></label>
+                <label>Nomor Telepon Ayah: <input type="text" name="telepon_ayah"></label>
+                <label>Nama Ibu: <input type="text" name="nama_ibu"></label>
+                <label>Pekerjaan Ibu: <input type="text" name="pekerjaan_ibu"></label>
+                <label>Alamat Ibu: <textarea name="alamat_ibu"></textarea></label>
+                <label>Nomor Telepon Ibu: <input type="text" name="telepon_ibu"></label>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+</body>
+</html>
